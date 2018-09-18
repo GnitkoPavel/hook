@@ -3,6 +3,9 @@ pipeline {
     tools {
         maven 'M3'
     }
+    triggers {
+       pollSCM('*/2 * * * *')
+    }
     environment {
         WAR_NAME = 'hello-world' 
         DEPLOYMENT_PATH='/opt/wildfly/standalone/deployments'
