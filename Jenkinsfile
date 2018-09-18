@@ -7,7 +7,7 @@ pipeline {
        pollSCM('*/2 * * * *')
     }
     environment {
-        WAR_NAME = '1hello-world' 
+        WAR_NAME = '11hello-world' 
         DEPLOYMENT_PATH='/opt/wildfly/standalone/deployments'
         HOST_WILD = 'root@192.168.60.7'
         HOST_ART = 'http://192.168.60.8:8081/artifactory'
