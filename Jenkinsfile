@@ -4,7 +4,7 @@ pipeline {
         maven 'M3'
     }
     triggers {
-       pollSCM('*/2 * * * *')
+        githubPush()
     }
     environment {
         WAR_NAME = '11hello-world' 
